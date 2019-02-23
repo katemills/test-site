@@ -2,7 +2,7 @@ baseurl = "/"
 languageCode = "en-us"
 title = "ABCD Workshop on Brain Development and Mental Health"
 theme = "hugo-theme-casper"
-# disqusShortname = "spf13"
+disqusShortname = "spf13"
 # Enable Google Analytics by inserting your tracking code
 googleAnalytics = ""
 # Define how many posts should appear on a site
@@ -10,8 +10,6 @@ paginate = 0
 canonifyurls = true
 
 [params]
-  workshoplocation = "Portland, Oregon"
-  workshopdates = "August 19-23, 2019"
   description = "Sponsored by the NIMH"
   cover = "images/cover.jpg"
   author = "Kate Mills"
