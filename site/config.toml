@@ -13,7 +13,7 @@ data-netlify="true"
 [params]
   description = "Sponsored by the NIMH"
   location = "Portland, Oregon"
-  dates = "August 19-23, 2019"
+  dates = "August 19-23, 2019<br>Cost: Free!"
   savethedate = "Sign up to receive updates"
   cover = "images/cover.jpg"
   googleAnalyticsUserID = ""
