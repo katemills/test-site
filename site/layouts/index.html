@@ -1,0 +1,42 @@
+{{ partial "header" . }}
+
+{{if .Site.Params.cover}}
+{{if or (eq (substr .Site.Params.cover 0 7) "http://") (eq (substr .Site.Params.cover 0 8) "https://")}}
+  <header class="main-header" style="background-image: url({{.Site.Params.cover}})">
+  {{ else }}
+  <header class="main-header" style="background-image: url({{.Site.BaseURL}}{{.Site.Params.cover}})">
+  {{ end }}
+{{else}}
+<header class="main-header no-cover">
+{{end}}
+
+
+
+<div class="intro">
+        <h1><center>{{ markdownify .Title }}</center></h1>
+        
+        <h2><center>{{ markdownify .Site.Params.Description }}</center></h2>
+        <h2><center>{{ markdownify .Site.Params.Date }}</center></h2>
+        
+        <h2><center>{{ markdownify .Site.Params.Location }}</center></h2>
+        
+        
+        <h2><center>{{ markdownify .Site.Params.Savethedate }}</center></h2>
+        
+        
+<form name="contact" method="POST" data-netlify="true">
+  <p>
+  <label>Your Name: <input type="text" name="name" /></label>   
+  </p>
+  <p>
+  <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+  <button type="submit">Send</button>
+  </p>
+  </form>
+
+</div>
+
+
+{{ partial "footer" . }}
