@@ -882,12 +882,12 @@ body.nav-opened .menu-button .word {
 
 .page-description {
     margin: 0;
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 1.5em;
-    font-weight: 400;
+    font-weight: 600;
     font-family: "Merriweather", serif;
     letter-spacing: 0.01rem;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255,255,255,0.9);
 }
 
 .no-cover.main-header {
@@ -1503,7 +1503,7 @@ body:not(.post-template) .post-title {
     }
 
     .page-description {
-        font-size: 1.8rem;
+        font-size: 2rem;
         line-height: 1.5em;
     }
 
