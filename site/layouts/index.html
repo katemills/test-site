@@ -23,6 +23,7 @@
               <a class="menu-button icon-feed" href="{{ .RSSLink }}">&nbsp;&nbsp;Subscribe</a>
             {{end}}
         {{end}}
+        
     </nav>
     <div class="vertical">
         <div class="main-header-content inner">
@@ -71,13 +72,10 @@
 
             <h1 class="page-title">{{ .Site.Title }}</h1>
             <h2 class="page-description">{{ .Site.Params.description }}</h2>
-        </div>
-    </div>
-    <a class="scroll-down icon-arrow-left" href="#content"><span class="hidden">Scroll Down</span></a>
-</header>
-
-        
-<form name="contact" method="POST" data-netlify="true">
+            <h2 class="page-description">{{ .Site.Params.location }}</h2>
+            <h2 class="page-description">{{ .Site.Params.dates }}</h2>
+            <h2 class="page-description">{{ .Site.Params.savethedate }}</h2>
+            <h2><center><form name="contact" method="POST" data-netlify="true">
   <p>
   <label>Your Name: <input type="text" name="name" /></label>   
   </p>
@@ -88,9 +86,11 @@
   <button type="submit">Send</button>
   </p>
   </form>
+  </center>
+  </h2>
 
-</div>
-
+        </div>
+    </div>
+</header>
 
 {{ partial "footer.html" . }}
-

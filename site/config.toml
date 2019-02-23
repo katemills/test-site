@@ -11,7 +11,10 @@ canonifyurls = true
 data-netlify="true"
 
 [params]
-  description = "Sponsored by the NIMH<br>Location: Portland, Oregon<br>Dates: August 19-23, 2019<br><br>Sign up to receive updates"
+  description = "Sponsored by the NIMH"
+  location: "Portland, Oregon"
+  dates: "August 19-23, 2019"
+  savethedate: "Sign up to receive updates"
   cover = "images/cover.jpg"
   googleAnalyticsUserID = ""
   hideHUGOSupport = false
