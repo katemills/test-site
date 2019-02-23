@@ -72,9 +72,9 @@
 
             <h1 class="page-title">{{ .Site.Title }}</h1>
             <h2 class="page-description">{{ .Site.Params.description }}</h2>
-            <h2 class="page-description">{{ .Site.Params.location }}</h2>
-            <h2 class="page-description">{{ .Site.Params.dates }}</h2>
-            <h2 class="page-description">{{ .Site.Params.savethedate }}</h2>
+            <h2><center>{{  markdownify .Site.Params.location }}</center></h2>
+            <h2><center>{{  markdownify .Site.Params.dates }}</center></h2>
+            <h2><center>{{ markdownify .Site.Params.savethedate }}</center></h2>
             <h2><center><form name="contact" method="POST" data-netlify="true">
   <p>
   <label>Your Name: <input type="text" name="name" /></label>   
