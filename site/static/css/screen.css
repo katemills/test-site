@@ -879,6 +879,7 @@ body.nav-opened .menu-button .word {
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
     color: #ffffff;
+    text-shadow: 1px 1px #000000;
 }
 
 .page-description {
@@ -889,6 +890,7 @@ body.nav-opened .menu-button .word {
     font-family: "Open Sans", sans-serif;
     letter-spacing: 0.01rem;
     color: #ffffff;
+    text-shadow: 1px 1px #000000;
 }
 
 .no-cover.main-header {
